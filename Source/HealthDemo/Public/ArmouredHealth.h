@@ -15,8 +15,14 @@ UCLASS()
 class HEALTHDEMO_API UArmouredHealth : public UHealth
 {
 	GENERATED_BODY()
-	
-	public:
+
+private: 
+	UPROPERTY(VisibleAnywhere, Category = "Armour|MaxArmour")
+	int MaxArmour = 3;
+	UPROPERTY(VisibleAnywhere, Category = "Armour")
+	int Armour;
+
+public:
 		// notice i have to say this is an override
 		void TakeDamage(int Damage) override;
 };

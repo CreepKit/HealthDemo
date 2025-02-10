@@ -3,12 +3,15 @@
 
 #include "Health.h"
 
+
+
 // Sets default values for this component's properties
 UHealth::UHealth()
 {
 	//Disable the update as we dont need it
 	//PrimaryComponentTick.bCanEverTick = true;
 	HP = MaxHealth;
+
 	// ...
 }
 
